@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>pesa haraka</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <h1>Welcome to Pesa Haraka</h1>
+    <p>This is a Fast, Reliable Transaction</p>
+    <form id="transactionForm">
+      <label for="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        placeholder="Enter your full name"
+        required
+      />
+      <label for="transactionType">Transaction Type:</label>
+      <select id="transactionType" required>
+        <option value="">Select Transaction</option>
+        <option value="send">send Money</option>
+        <option value="withdraw">Withdraw Money</option>
+        <option value="business">Pay a Business</option>
+      </select>
+      <label for="amount">Amount(ksh):</label>
+      <input
+        type="number"
+        id="amount"
+        placeholder="enter amount"
+        min="1"
+        max="150000"
+        required
+      />
+
+      <p id="feepreview">Transaction fee:KSh 0</p>
+      <p id="message"></p>
+      <button type="submit">submit Transaction</button>
+    </form>
+    <section id="receipt" hidden>
+      <h2>Transaction Receipt</h2>
+      <div id="receiptDetails"></div>
+      <button type="button" id="newTransaction">New Transaction</button>
+    </section>
+  </body>
+</html>
