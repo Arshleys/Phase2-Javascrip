@@ -3,20 +3,27 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: beige;
+  background-color: grey;
   margin: 0;
-  padding: 30px;
+  padding: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
 h1 {
   text-align: center;
-  color: grey;
+  color: rgb(11, 1, 1);
+}
+p1 {
+  text-align: center;
+  padding-left: 345px;
 }
 body > p {
   text-align: center;
-  color: #64748b;
+  color: #2a4c7b;
 }
 form {
-  background-color: white;
+  background-color: rgb(222, 222, 222);
   max-width: 500px;
   margin: 30px auto;
   padding: 25px;
@@ -24,7 +31,8 @@ form {
 }
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
+  margin-top: 16px;
   font-weight: bold;
 }
 button {
@@ -75,4 +83,3 @@ input[aria-invalid="true"] {
   margin: 0;
   text-align: right;
 }
-
